@@ -9,6 +9,7 @@ tartanski-cpu/SWVR).
 - **Hand fit** (`index.html`, also `handlab.html`): fitting the VR hands to the controllers.
   Open https://tartanski-cpu.github.io/WBWtests/ in the Quest browser, press Enter
   passthrough, adjust the hands, and copy the numbers back.
+  It starts from the game's current fit: the owner's own, pitch 40°, no move (4 Nov 2026).
 
 These files are built, not written by hand: from SWVR,
 `npx vite build --config vite.handlab.config.ts`, then the contents of `dist-handfit/` copied
