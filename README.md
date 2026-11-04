@@ -1,5 +1,7 @@
 # Workboat World tests
 
+Live at https://tartanski-cpu.github.io/WBWtests/ (GitHub Pages, from `main`).
+
 Small test pages for Workboat World, published here on their own so they go live a minute
 after a change, apart from the game's site and its publishing queue (the game's code is at
 tartanski-cpu/SWVR).
