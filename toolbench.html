@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Workboat World tool bench</title>
+    <style>html,body{color:#10202a;background:#1b2329;height:100%;margin:0;font:14px/1.45 system-ui,sans-serif;overflow:hidden}canvas{display:block}#panel{box-sizing:border-box;background:#fafcfdf0;border-radius:8px;width:330px;max-height:calc(100% - 110px);padding:12px 14px;position:fixed;top:12px;left:12px;overflow-y:auto;box-shadow:0 2px 10px #00000040}#panel h1{color:#2f4a5a;letter-spacing:.04em;text-transform:uppercase;margin:0 0 6px;font-size:15px}#panel p{color:#345;margin:0 0 8px}#panel ul{color:#345;margin:0 0 8px;padding-left:18px}.row{flex-wrap:wrap;gap:6px;margin:6px 0;display:flex}button{font:inherit;cursor:pointer;background:#eef3f5;border:1px solid #8aa;border-radius:6px;padding:7px 12px;font-weight:600}button:disabled{opacity:.5;cursor:default}#status{color:#345;min-height:1.2em;font-size:13px}#notice{color:#eef5f7;opacity:0;pointer-events:none;background:#0c161ed1;border-radius:8px;padding:7px 14px;font-weight:600;transition:opacity .4s;position:fixed;top:18px;left:50%;transform:translate(-50%)}#flash{opacity:0;pointer-events:none;background:#fff;transition:opacity .25s;position:fixed;inset:0}#finder{pointer-events:none;border:2px solid #ffffffd9;border-radius:6px;position:fixed;inset:18% 22%}#reticle{pointer-events:none;background:#fffc;border-radius:50%;width:6px;height:6px;margin:-3px;position:fixed;top:50%;left:50%}</style>
+    <script type="module" crossorigin src="./assets/toolbench-WAllRCQ9.js"></script>
+    <link rel="modulepreload" crossorigin href="./assets/avatarOutfits-B9Xsawxs.js">
+  </head>
+  <body>
+    <div id="panel">
+      <h1>Tool bench</h1>
+      <p>The hand tools, on their own, to try before they go into the game: a piece of engine room with a small fire, a damaged plate, a rusty bulkhead and a paint tin.</p>
+      <p><b>Desktop:</b> click the room to look about (Esc to get the mouse back), WASD to walk.</p>
+      <ul>
+        <li><b>1–9</b> take a tool, <b>0</b> or the same number again puts it away; the <b>mouse wheel</b> steps through them</li>
+        <li><b>Left button</b> uses it, <b>right button</b> its secondary</li>
+        <li>Controller: <b>LB / RB</b> step, hold <b>LB</b> for the wheel (right stick picks), <b>RT</b> use, <b>LT</b> secondary</li>
+      </ul>
+      <p><b>VR:</b> reach behind your head over either shoulder and squeeze the <b>grip</b>: the ring of tools opens. Point at one and grip to take it; hold the grip to hold it, let go and it's back in the backpack. One in each hand. <b>Trigger</b> uses it, <b>A / X</b> its secondary.</p>
+      <div class="row"><button id="enterVr" disabled>Enter VR</button><button id="enterAr" disabled>Enter passthrough</button></div>
+      <div id="status"></div>
+    </div>
+    <div id="notice"></div>
+    <div id="flash"></div>
+    <div id="finder" hidden></div>
+    <div id="reticle"></div>
+  </body>
+</html>
