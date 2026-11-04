@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Workboat World hand fit</title>
+    <style>html,body{color:#10202a;background:#9fb8c8;height:100%;margin:0;font:14px/1.45 system-ui,sans-serif;overflow:hidden}canvas{display:block}#panel{box-sizing:border-box;background:#fafcfdf2;border-radius:8px;width:340px;padding:12px 14px;position:fixed;top:12px;bottom:12px;left:12px;overflow-y:auto;box-shadow:0 2px 10px #00000026}#panel h1{color:#2f4a5a;letter-spacing:.04em;text-transform:uppercase;margin:0 0 6px;font-size:15px}#panel h2{color:#456;letter-spacing:.04em;text-transform:uppercase;margin:12px 0 4px;font-size:13px}#panel p{color:#345;margin:0 0 8px}.row{flex-wrap:wrap;align-items:center;gap:6px;margin:4px 0;display:flex}.row .lbl{color:#345;width:108px}.row .val{text-align:center;font-variant-numeric:tabular-nums;width:74px}button,select{font:inherit;cursor:pointer;color:#10202a;background:#eef3f5;border:1px solid #8aa;border-radius:6px;padding:5px 9px}button.on{color:#fff;background:#2f5d8a;border-color:#2f5d8a}button.big{padding:8px 12px;font-weight:600}button:disabled{opacity:.5;cursor:default}#readout{white-space:pre-wrap;background:#e6eef1;border-radius:6px;margin:6px 0;padding:8px;font:12px/1.45 ui-monospace,Menlo,Consolas,monospace}#status{color:#345;min-height:1.2em;font-size:13px}.map{grid-template-columns:70px 1fr;align-items:center;gap:4px 8px;display:grid}.map select{width:100%}@media (max-width:640px){#panel{width:auto;max-height:55%;bottom:auto;right:12px}}</style>
+    <script type="module" crossorigin src="./assets/handlab-CNHfnEfq.js"></script>
+  </head>
+  <body>
+    <div id="panel">
+      <h1>Hand fit</h1>
+      <p>Fit the hands to your controllers, then copy the numbers back. Put the headset on and press <b>Enter passthrough</b> to see your real hands with the game's hands over them, or <b>Enter VR</b>. In the headset, point at the floating panel and pull the trigger; <b>B</b> brings the panel back in front of you; grip makes a fist, grip with the stick pushed forward points.</p>
+      <div class="row"><button id="enterAr" class="big" disabled>Enter passthrough</button><button id="enterVr" class="big" disabled>Enter VR</button></div>
+      <div id="status"></div>
+      <div id="controls"></div>
+      <h2>Numbers</h2>
+      <div id="readout"></div>
+      <div class="row"><button id="copy">Copy the numbers</button><button id="reset">Back to the game's</button></div>
+      <h2>Hand model</h2>
+      <p>The game's hands, or a .glb file of your own (its parts are listed: pick which part is each pose).</p>
+      <div class="row"><input type="file" id="file" accept=".glb,.gltf,model/gltf-binary" /></div>
+      <div class="row"><button id="useGame">Use the game's hands</button></div>
+      <div id="mapping"></div>
+    </div>
+  </body>
+</html>
